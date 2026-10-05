@@ -1,0 +1,250 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    color: #26364a;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav.navbar {
+    background-color: #0B1B2B !important;
+    border-bottom: 3px solid #12294a;
+}
+
+.navbar .marca {
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.navbar .nav-link {
+    color: aliceblue !important;
+    padding: 0.9rem 1rem;
+    font-size: 15px;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+    color: #6db3ff !important;
+    border-bottom-color: #6db3ff;
+}
+
+.teladefundo {
+    background-image:linear-gradient(90deg, rgba(5, 12, 22, 0.95) 0%, rgba(5, 12, 22, 0.75) 45%, rgba(5, 12, 22, 0.1) 100%), url('../images/germanio.jpg');
+    background-size: cover;
+    background-position: center right;
+    color: #fff;
+    padding: 4rem 0 4.5rem;
+}
+
+.teladefundo h3 {
+    color: #4da3ff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+
+.teladefundo h1 {
+    font-size: clamp(3rem, 8vw, 4.5rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.teladefundo p {
+    max-width: 480px;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.conheca {
+    background-color: #1f6feb;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    color: #fff !important;
+}
+
+.conheca:hover {
+    background-color: #1558c0;
+}
+
+.secao {
+    padding: 2.5rem 0;
+}
+
+.secao-escura {
+    background-color: #0B1B2B;
+    color: #fff;
+}
+
+.secao p {
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.tituloSecao {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #14356b;
+    margin-bottom: 1.25rem;
+}
+
+#Caracteristicas {
+    background-color: #fff;
+}
+
+.card {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background-color: #f0f5fc;
+    border-radius: 10px;
+    padding: 1.25rem;
+}
+
+.figura .imgHistoria {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 340px;
+}
+
+.card dl {
+    margin: 0;
+}
+
+.card dt {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #26364a;
+}
+
+.card dd {
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+    color: #0B1B2B;
+}
+
+.icone {
+    font-size: 2.6rem;
+    color: #14356b;
+    line-height: 1;
+}
+
+.figura {
+    margin: 0;
+}
+
+.figura img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.figura figcaption {
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.figura figcaption small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #55677f;
+}
+
+#Historia .figura figcaption {
+    color: #fff;
+}
+
+#Ocorrencia .figura img {
+    height: 150px;
+}
+
+#Usos .figura img {
+    height: 115px;
+    border-radius: 4px;
+}
+
+.caixaRiscos {
+    background-color: #eaf1fb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.caixaRiscos .tituloSecao {
+    font-size: 1.6rem;
+}
+
+.riscos {
+    min-height: 220px;
+    background-color: #05101c;
+}
+
+.riscos img {
+    object-fit: cover;
+    display: block;
+}
+
+.fontes i {
+    color: #1f6feb;
+    font-size: 1.4rem;
+}
+
+.fontes strong {
+    display: block;
+    color: #14356b;
+}
+
+.fontes span {
+    display: block;
+    font-size: 0.85rem;
+}
+
+.fontes a {
+    color: #1f6feb;
+    font-size: 0.8rem;
+    word-break: break-all;
+}
+
+.rodape {
+    background-color: #0B1B2B;
+    color: aliceblue;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+}
+
+.rodape a {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 767px) {
+    .teladefundo {
+        background-image:
+            linear-gradient(rgba(5, 12, 22, 0.85), rgba(5, 12, 22, 0.85)),
+            url('../images/germanio.jpg');
+    }
+
+    .card-carac {
+        flex-direction: column;
+    }
+}
